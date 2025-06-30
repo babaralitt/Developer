@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STyle>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            font-size: 3.em;
+        }
+
+        h1>span {
+            position: relative;
+            display: inline-block;
+            color: #ff8800;
+            height: 1.25em;
+            vertical-align: bottom;
+            overflow: hidden;
+        }
+
+        h1>span>span {
+            display: block;
+            animation: bbb 10s infinite ease;
+        }
+
+        @keyframes bbb {
+            0% {
+                transform: translateY(0%);
+            }
+
+            25% {
+                transform: translateY(-100%);
+            }
+
+            50% {
+                transform: translateY(-200%);
+            }
+
+            75% {
+                transform: translateY(-300%);
+            }
+
+            100% {
+                transform: translateY(-400%);
+            }
+        }
+    </STyle>
+</head>
+
+<body>
+    <H1>
+        I'M A
+        <span>
+            <span>CODER</span>
+            <span>DEVELOPER</span>
+            <span>PROGRAMER</span>
+            <span>DESIGNER</span>
+            <span>FREELANCER</span>
+        </span>
+    </H1>
+</body>
+
+</html>
